@@ -9,7 +9,7 @@ const password = "B7w8tHEMNKL985BW";
 //Database uri
 const dbURI = `mongodb+srv://${userName}:${password}@cluster0.a8umj.mongodb.net/JokesDB?retryWrites=true&w=majority`;
 //Server port
-const port = 8080;
+const port = process.env.PORT || 3000;
 
 async function getRndInteger(min, max) {
   try {
