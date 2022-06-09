@@ -45,7 +45,6 @@ app.get('/rjoke', function (req, res) {
     getRandomJoke().then(
         (data) => {
         res.json(data);
-        res.end;
     });
     
  });
