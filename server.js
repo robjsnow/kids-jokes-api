@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const numberOfJokes = 8080;
+const numberOfJokes = 300;
 const mongoose = require("mongoose");
 const Joke = require("./joke");
 const userName = "joker";
@@ -9,7 +9,7 @@ const password = "B7w8tHEMNKL985BW";
 //Database uri
 const dbURI = `mongodb+srv://${userName}:${password}@cluster0.a8umj.mongodb.net/JokesDB?retryWrites=true&w=majority`;
 //Server port
-const port = 443;
+const port = 8080;
 
 async function getRndInteger(min, max) {
   try {
