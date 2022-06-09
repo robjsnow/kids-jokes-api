@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const numberOfJokes = 171;
+const numberOfJokes = 300;
 const mongoose = require("mongoose");
 const Joke = require("./joke");
 const userName = "joker";
@@ -9,7 +9,7 @@ const password = "B7w8tHEMNKL985BW";
 //Database uri
 const dbURI = `mongodb+srv://${userName}:${password}@cluster0.a8umj.mongodb.net/JokesDB?retryWrites=true&w=majority`;
 //Server port
-const port = 3000;
+const port = 443;
 
 async function getRndInteger(min, max) {
     try {
@@ -39,7 +39,13 @@ mongoose
   })
   .catch((err) => console.log(err));
 
+app.get ('/', function (req, res) {
+  getRandomJoke().then(
+    (data) => {
+    res.send(`<h1>${data.question} ${data.answer}</h1>`)
+});
 
+})
 app.get('/rjoke', function (req, res) {
     
     getRandomJoke().then(
