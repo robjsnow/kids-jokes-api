@@ -1,6 +1,6 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const numberOfJokes = 300;
+const numberOfJokes = 8080;
 const mongoose = require("mongoose");
 const Joke = require("./joke");
 const userName = "joker";
@@ -12,19 +12,19 @@ const dbURI = `mongodb+srv://${userName}:${password}@cluster0.a8umj.mongodb.net/
 const port = 443;
 
 async function getRndInteger(min, max) {
-    try {
-    let id = await Math.floor(Math.random() * (max - min + 1) ) + min;
+  try {
+    let id = (await Math.floor(Math.random() * (max - min + 1))) + min;
     return id;
-    } catch (error) {
-        Promise.reject(error);
-    }
+  } catch (error) {
+    Promise.reject(error);
   }
+}
 
 async function getRandomJoke() {
-    const rndId = await getRndInteger(1, numberOfJokes);
-    const joke = await Joke.findById(rndId);
+  const rndId = await getRndInteger(1, numberOfJokes);
+  const joke = await Joke.findById(rndId);
 
-   return joke;
+  return joke;
 }
 
 mongoose
@@ -39,19 +39,13 @@ mongoose
   })
   .catch((err) => console.log(err));
 
-app.get ('/', function (req, res) {
-  getRandomJoke().then(
-    (data) => {
-    res.send(`<h1>${data.question} ${data.answer}</h1>`)
+app.get("/", function (req, res) {
+  getRandomJoke().then((data) => {
+    res.send(`<h1>${data.question} ${data.answer}</h1>`);
+  });
 });
-
-})
-app.get('/rjoke', function (req, res) {
-    
-    getRandomJoke().then(
-        (data) => {
-        res.json(data);
-    });
-    
- });
-
+app.get("/rjoke", function (req, res) {
+  getRandomJoke().then((data) => {
+    res.json(data);
+  });
+});
