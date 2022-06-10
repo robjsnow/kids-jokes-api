@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const numberOfJokes = 300;
 const mongoose = require("mongoose");
-const Joke = require("./joke");
+const Joke = require("./models/Joke");
 const userName = "joker";
 const password = "B7w8tHEMNKL985BW";
 
