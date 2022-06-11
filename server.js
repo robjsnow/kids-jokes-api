@@ -41,10 +41,6 @@ mongoose
   })
   .catch((err) => console.log(err));
 
-  app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "*")
-  }) 
-
 app.get("/", function (req, res) {
   getRandomJoke().then((data) => {
     res.send(`<h1>${data.question} ${data.answer}</h1>`);
