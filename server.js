@@ -7,10 +7,15 @@ const userName = "joker";
 const password = "B7w8tHEMNKL985BW";
 const cors = require("cors");
 app.use(cors());
+
+app.use(express.static("front-end"));
+
+
 //Database uri
 const dbURI = `mongodb+srv://${userName}:${password}@cluster0.a8umj.mongodb.net/JokesDB?retryWrites=true&w=majority`;
 //Server port
 const port = process.env.PORT || 3000;
+
 
 async function getRndInteger(min, max) {
   try {
@@ -44,7 +49,7 @@ mongoose
 
 app.get("/", function (req, res) {
   getRandomJoke().then((data) => {
-    res.send(`<h1>${data.question} ${data.answer}</h1>`);
+  res.sendFile( __dirname + "/front-end/index.html");
   });
 });
 
