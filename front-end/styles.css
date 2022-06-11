@@ -1,0 +1,76 @@
+body {
+    background-color:black; 
+}
+
+#question {
+    color: #2FF3E0;
+    font-size: 3.5em; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    -ms-transform: translateY(-30%);
+    transform: translateY(-50%);
+    border:10px dotted #4C5270;
+    padding: 10px;
+    width: 630px;
+    height:auto;
+    margin:25px;
+}
+
+#answer {
+    color: #FA26A0;
+    font-size: 3.5em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 75%;
+    right: 20%;
+    -ms-transform: translateY(-30%);
+    transform: translateY(-50%);
+    border:10px dotted #4C5270;
+    padding: 10px;
+    width: 630px;
+    height: auto;
+    margin: 25px;
+}
+
+p {
+    width: 40%;
+    text-align: center;
+    font-size: 7.75em;
+    color: #FA26A0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    padding-right: 2.75em;
+    padding-bottom: 20px;
+}
+ 
+.heading {
+    float:right;   
+}
+ 
+a {
+    float:left;
+    padding-left: 6em;
+    max-width: 100%;
+    height: auto;
+}
+    
+button {
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    right: 72%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-radius: 195px;
+    width: 20rem;
+    height: 15rem;
+    font-size: 4em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #F8D210;
+    
+}
+
