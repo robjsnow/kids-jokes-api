@@ -4,7 +4,7 @@ body {
 
 #question {
     color: #2FF3E0;
-    font-size: 3.5em; 
+    font-size: 3.5vw; 
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 700;
     position: absolute;
@@ -12,16 +12,16 @@ body {
     right: 20%;
     -ms-transform: translateY(-30%);
     transform: translateY(-50%);
-    border:10px dotted #4C5270;
+    border:15px dotted #4C5270;
     padding: 10px;
-    width: 630px;
+    width: 40vw;
     height:auto;
     margin:25px;
 }
 
 #answer {
     color: #FA26A0;
-    font-size: 3.5em;
+    font-size: 3.5vw;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 700;
     position: absolute;
@@ -29,22 +29,24 @@ body {
     right: 20%;
     -ms-transform: translateY(-30%);
     transform: translateY(-50%);
-    border:10px dotted #4C5270;
+    border:15px dotted #4C5270;
     padding: 10px;
-    width: 630px;
+    width: 40vw;
     height: auto;
     margin: 25px;
 }
 
 p {
-    width: 40%;
+    width: 40vw;
     text-align: center;
-    font-size: 7.75em;
-    color: #FA26A0;
+    font-size: 7.75vw;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 700;
-    padding-right: 2.75em;
-    padding-bottom: 20px;
+    padding-right: 23vw;
+    padding-bottom: 10vw;
+    background: -webkit-linear-gradient(#e6a709, #b01c46);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
  
 .heading {
@@ -53,9 +55,9 @@ p {
  
 a {
     float:left;
-    padding-left: 6em;
-    max-width: 100%;
+    max-width: 20vw;
     height: auto;
+    margin: 3vw;
 }
     
 button {
@@ -66,9 +68,9 @@ button {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     border-radius: 195px;
-    width: 20rem;
-    height: 15rem;
-    font-size: 4em;
+    width: 20vw;
+    height: 15vw;
+    font-size: 4vw;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #F8D210;
     
