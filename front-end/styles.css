@@ -37,6 +37,7 @@ body {
 }
  
 h1 {
+    float:right;
     padding-right: 23vw;
     padding-bottom: 10vw;
     text-align: center;
@@ -55,9 +56,6 @@ h1:hover {
         0 11px 0 #434242, 0 12px 0 #434242,
         0 20px 30px rgba(0, 0, 0, 0.5);
 }
-.heading {
-    float:right;   
-}
  
 img {
     float:left;
@@ -75,7 +73,7 @@ button {
     margin-left: 8vw;
 	border-radius: 10vw;
 	line-height: 2.5vw;
-	font-size: 3vw;
+	font-size: 4vw;
 	font-weight: 600;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	border: 1px solid #012880;
