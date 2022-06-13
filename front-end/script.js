@@ -20,7 +20,7 @@ function playAudio() {
 }
 
 function pickRandomSound() {
-  let num = Math.floor(Math.random() * 19);
+  let num = Math.floor(Math.random() * 42);
   let path = "./sounds/soundEffect" + num + ".mp3";
   console.log(path);  
   return path;
