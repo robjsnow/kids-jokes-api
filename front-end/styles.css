@@ -3,13 +3,13 @@ body {
 }
 
 #question {
-    color: #2FF3E0;
+    color: #5e59ed;
     font-size: 3.5vw; 
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 700;
     position: absolute;
     top: 50%;
-    right: 20%;
+    right: 15%;
     -ms-transform: translateY(-30%);
     transform: translateY(-50%);
     border:15px dotted #4C5270;
@@ -26,7 +26,7 @@ body {
     font-weight: 700;
     position: absolute;
     top: 75%;
-    right: 20%;
+    right: 15%;
     -ms-transform: translateY(-30%);
     transform: translateY(-50%);
     border:15px dotted #4C5270;
@@ -35,44 +35,62 @@ body {
     height: auto;
     margin: 25px;
 }
-
-p {
-    width: 40vw;
-    text-align: center;
-    font-size: 7.75vw;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 700;
+ 
+h1 {
+    float:right;
     padding-right: 23vw;
     padding-bottom: 10vw;
-    background: -webkit-linear-gradient(#e6a709, #b01c46);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
- 
-.heading {
-    float:right;   
-}
- 
-a {
-    float:left;
-    max-width: 20vw;
-    height: auto;
-    margin: 3vw;
-}
-    
-button {
-    margin: 0;
-    position: absolute;
-    top: 70%;
-    right: 72%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    border-radius: 195px;
-    width: 20vw;
-    height: 15vw;
-    font-size: 4vw;
+    text-align: center;
+    color: #2ff3e0;
+    font-size: 8vw;
+    transition: 0.5s;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #F8D210;
-    
 }
 
+h1:hover {
+    text-shadow: 0 1px 0 #434242, 0 2px 0 rgb(67, 66, 66),
+        0 3px 0 #434242, 0 4px 0 #434242,
+        0 5px 0 #434242, 0 6px 0 #434242,
+        0 7px 0 #434242, 0 8px 0 #434242,
+        0 9px 0 #434242, 0 10px 0 #434242,
+        0 11px 0 #434242, 0 12px 0 #434242,
+        0 20px 30px rgba(0, 0, 0, 0.5);
+}
+ 
+img {
+    float:left;
+    max-width: 50vw;
+    width: 30vw;
+    height: auto;
+    margin: 4vw;
+}
+ 
+button {
+	cursor: pointer;
+	position: relative;
+	padding: 6vw;
+    margin-bottom: 3vw;
+    margin-left: 8vw;
+	border-radius: 10vw;
+	line-height: 2.5vw;
+	font-size: 4vw;
+	font-weight: 600;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	border: 1px solid #012880;
+	background-image: linear-gradient(-180deg, #2ff3e0 0%, #C01F9E 100%);
+	box-shadow: 0 1rem 1.25rem 0 rgba(22,75,195,0.50),
+							0 -0.25rem 1.5rem rgba(110, 15, 155, 1) inset,
+							0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
+							0 0.25rem 0.5rem 0 rgba(180, 70, 207, 1) inset;
+}
+
+.twitter-share-button {
+    text-decoration: none;
+    float: right;
+}
+.fb-share-Button {
+    text-decoration: none;
+    float: right;
+    
+}
+    
