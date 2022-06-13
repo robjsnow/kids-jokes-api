@@ -65,3 +65,5 @@ app.get("/rjoke/:id", async function (req, res) {
   const joke = await Joke.findById(jokeId);
   res.json(joke);
 });
+
+module.exports = { port }
