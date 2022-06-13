@@ -10,7 +10,6 @@ app.use(cors());
 
 app.use(express.static("front-end"));
 
-
 //Database uri
 const dbURI = `mongodb+srv://${userName}:${password}@cluster0.a8umj.mongodb.net/JokesDB?retryWrites=true&w=majority`;
 //Server port
@@ -66,3 +65,5 @@ app.get("/rjoke/:id", async function (req, res) {
   const joke = await Joke.findById(jokeId);
   res.json(joke);
 });
+
+module.exports = { port }
