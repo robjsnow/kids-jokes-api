@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const numberOfJokes = 300;
+const numberOfJokes = 401;
 const mongoose = require("mongoose");
 const Joke = require("./models/Joke");
 const userName = "joker";
