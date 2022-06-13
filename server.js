@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const numberOfJokes = 300;
+const numberOfJokes = 401;
 const mongoose = require("mongoose");
 const Joke = require("./models/Joke");
 const userName = "joker";
@@ -9,7 +9,6 @@ const cors = require("cors");
 app.use(cors());
 
 app.use(express.static("front-end"));
-
 
 //Database uri
 const dbURI = `mongodb+srv://${userName}:${password}@cluster0.a8umj.mongodb.net/JokesDB?retryWrites=true&w=majority`;
