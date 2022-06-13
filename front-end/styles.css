@@ -49,7 +49,7 @@ h1 {
 
 h1:hover {
     text-shadow: 0 1px 0 #434242, 0 2px 0 rgb(67, 66, 66),
-        0 3px 0 #434242, 0 4px 0 #434242,
+        0 3px 0 #aca9a9, 0 4px 0 #434242,
         0 5px 0 #434242, 0 6px 0 #434242,
         0 7px 0 #434242, 0 8px 0 #434242,
         0 9px 0 #434242, 0 10px 0 #434242,
@@ -88,7 +88,7 @@ button {
     text-decoration: none;
     float: right;
 }
-.fb-share-Button {
+.fb-share-button {
     text-decoration: none;
     float: right;
     
